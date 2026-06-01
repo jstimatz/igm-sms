@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integrity Glass and Metal, Inc — SMS Notifications Opt-In</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+         max-width: 660px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 28px; }
+  .brand { color: #0a3d62; font-weight: 700; }
+  .card { border: 1px solid #e2e2e2; border-radius: 12px; padding: 24px; margin: 24px 0; }
+  label { display: block; margin: 12px 0 4px; font-weight: 600; }
+  input[type=text], input[type=tel] { width: 100%; padding: 10px; border: 1px solid #ccc;
+         border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
+  .consent { display: flex; gap: 10px; align-items: flex-start; margin: 18px 0;
+             border-top: 1px solid #eee; padding-top: 16px; }
+  .consent label { font-weight: 400; margin: 0; }
+  button { background: #0a3d62; color: #fff; border: 0; padding: 12px 20px; border-radius: 8px;
+           font-size: 1rem; cursor: pointer; }
+  small, .fine { color: #666; font-size: 0.85rem; }
+  nav a { color: #0a3d62; margin-right: 16px; }
+  footer { margin-top: 40px; }
+</style>
+</head>
+<body>
+  <h1><span class="brand">Integrity Glass and Metal, Inc</span><br>SMS Notifications Opt-In</h1>
+  <p>This form lets authorized staff of <strong>Integrity Glass and Metal, Inc</strong> opt in to
+     receive SMS text messages from the company's internal operations assistant.
+     <strong>Integrity Glass and Metal, Inc</strong> is the sole sender and operator of this
+     messaging program. No other company is involved in or sends messages through this program.</p>
+
+  <div class="card">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Full name">
+
+      <label for="phone">Mobile number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____">
+
+      <!-- Transactional / service consent (required) -->
+      <div class="consent">
+        <input type="checkbox" id="consent_service" name="consent_service">
+        <label for="consent_service">
+          <strong>Service messages (required):</strong> I agree to receive account- and
+          operations-related SMS text messages from <strong>Integrity Glass and Metal, Inc</strong>
+          at the number provided — including task updates, reminders, schedule and document
+          notifications, and replies to messages I send. Message frequency varies. Message &amp;
+          data rates may apply. Reply STOP to opt out, HELP for help.
+        </label>
+      </div>
+
+      <!-- Marketing consent (separate + optional) -->
+      <div class="consent">
+        <input type="checkbox" id="consent_marketing" name="consent_marketing">
+        <label for="consent_marketing">
+          <strong>Marketing messages (optional):</strong> I separately and optionally agree to
+          receive promotional or marketing SMS messages from
+          <strong>Integrity Glass and Metal, Inc</strong>. This consent is entirely optional, is
+          collected separately from the service-message consent above, and is never a condition of
+          opting into or receiving service messages. Reply STOP to opt out.
+        </label>
+      </div>
+
+      <button type="submit">Submit Opt-In</button>
+    </form>
+  </div>
+
+  <h2>How consent works</h2>
+  <p>Authorized staff enter their own mobile number and check the consent box(es) above.
+     Service-message consent and marketing consent are collected as two separate checkboxes —
+     marketing consent is optional and is never bundled with, or required for, service consent.
+     <strong>Integrity Glass and Metal, Inc</strong> messages only the individuals who have
+     explicitly opted in. Phone numbers are never purchased, sold, or shared with third parties.</p>
+
+  <h2>Opt-out &amp; help</h2>
+  <p>Reply <strong>STOP</strong> at any time to unsubscribe from all messages. Reply
+     <strong>START</strong> to opt back in. Reply <strong>HELP</strong> for assistance.</p>
+
+  <nav>
+    <a href="terms.html">Terms &amp; Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+
+  <footer class="fine">
+    <p>&copy; Integrity Glass and Metal, Inc. All messages in this program are sent solely by
+       Integrity Glass and Metal, Inc.</p>
+  </footer>
+</body>
+</html>
